@@ -1,3 +1,5 @@
+import { PaletteOptions } from "@mui/material/styles";
+
 declare module "@emotion/react" {
   export interface Theme {
     palette: {
@@ -8,3 +10,4 @@ declare module "@emotion/react" {
     };
   }
 }
+declare module "emotion-media-query";
