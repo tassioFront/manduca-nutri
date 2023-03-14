@@ -8,13 +8,18 @@ interface IUIWhatsAppBtn {
 export default function UIWhatsAppBtn({ label, ...rest }: IUIWhatsAppBtn) {
   return (
     <Button
+      sx={{
+        minWidth: "auto",
+        textTransform: "capitalize",
+        width: "100% !important",
+      }}
       variant="contained"
       color="primary"
       disableElevation
       startIcon={<WhatsAppIcon />}
       {...rest}
     >
-      {label ?? "QUERO UMA AVALIAÇÃO GRÁTIS"}
+      <span>{label ?? "Quero uma avaliação grátis"}</span>
     </Button>
   );
 }

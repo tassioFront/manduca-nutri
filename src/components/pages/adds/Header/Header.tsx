@@ -49,8 +49,8 @@ export default function Header() {
       </Styles.Intro>
       <Styles.Image
         src="./manduca__no-bg.png"
-        height="200"
-        width="350"
+        height="150"
+        width="260"
         alt="äsas"
       ></Styles.Image>
     </Styles.Header>

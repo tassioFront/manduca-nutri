@@ -22,7 +22,7 @@ export const Styles = {
     display: flex;
     max-width: 400px;
     margin: var(--spacing-base);
-    min-height: 235px;
+    min-height: 220px;
     width: 100%;
     flex-direction: column;
     justify-content: space-around;

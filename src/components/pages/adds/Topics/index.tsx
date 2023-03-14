@@ -21,7 +21,7 @@ const topics = [
   {
     Icon: PhoneIphoneIcon,
     label:
-      "Acesso ao seu plano alimentar, receitinhas, chat e muito mais. Tudo via <strong>aplicativo</strong>",
+      "Plano alimentar, receitinhas, chat e muito mais. Tudo via <strong>aplicativo</strong>",
   },
 ];
 

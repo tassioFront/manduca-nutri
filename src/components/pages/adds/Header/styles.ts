@@ -27,7 +27,6 @@ export const Styles = {
     `}
   `,
   Intro: styled.div`
-    /* display: flex; */
     max-width: 600px;
   `,
   Logo: styled(Logo)`
@@ -38,6 +37,11 @@ export const Styles = {
     cursor: unset;
     object-fit: contain;
     object-position: bottom;
+
+    ${greaterThan("tablet")`
+      height="200"
+      width="350"
+    `}
 
     ${greaterThan("desktop")`
       height: 560px;
