@@ -6,7 +6,8 @@ const Styles = {
     display: flex;
     height: 100%;
     width: 100%;
-    padding: var(--spacing-xxlarge) var(--spacing-xsmall) (--spacing-xxxlarge);
+    padding: var(--spacing-xxlarge) var(--spacing-xsmall)
+      var(--spacing-xxxlarge);
     flex-direction: column;
 
     ${greaterThan("tablet")`
