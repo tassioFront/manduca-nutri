@@ -5,11 +5,9 @@ import styled from "@emotion/styled";
 const Styles = {
   Section: styled(Section)`
     h2 {
-      color: ${(props) => props["data-index"]};
+      color: ${(props) => (props as any)["data-color"]};
+      background-color: ${(props) => (props as any)["data-bg"]};
     }
-
-    ${greaterThan("tablet")`
-    `}
   `,
 };
 
