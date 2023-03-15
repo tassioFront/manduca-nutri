@@ -44,7 +44,7 @@ const plans = [
     title: "Premium",
     items: [
       {
-        label: "2 consultas",
+        label: "4 consultas",
       },
       {
         label: "Acesso ao aplicativo",
