@@ -1,24 +1,29 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import PageHead from "@/components/pages/adds/Head/PageHead";
 import Header from "@/components/pages/adds/Header/Header";
 import { Container } from "@mui/material";
 import { sections } from "@/components/pages/adds/helpers/sections";
-import Section from "@/components/ui/Section";
-
-const inter = Inter({ subsets: ["latin"] });
+import {
+  bgContextColor,
+  bgContextColorDark,
+} from "@/components/pages/adds/helpers/contextColors";
+import Styles from "./styles";
 
 export default function HowItWorks() {
+  const isEven = (index: number) => index % 2;
   return (
     <>
       <PageHead />
       <Container component="main" maxWidth="xl" disableGutters>
         <Header />
-        {sections.map((section) => (
-          <Section key="asda" heading2={section.heading2}>
+        {sections.map((section, index) => (
+          <Styles.Section
+            key={section.heading2}
+            data-index={isEven(index) ? "white" : bgContextColorDark}
+            heading2={section.heading2}
+            style={{ background: isEven(index) ? bgContextColor : "white" }}
+          >
             <section.children />
-          </Section>
+          </Styles.Section>
         ))}
       </Container>
     </>

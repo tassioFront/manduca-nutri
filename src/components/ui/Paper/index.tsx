@@ -3,7 +3,7 @@ import Styles from "./styles";
 
 interface PaperTypes {
   children: JSX.Element | JSX.Element[] | string;
-  variant: "default" | "adds";
+  variant?: "default" | "adds";
 }
 export default function Paper({
   children,

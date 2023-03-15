@@ -5,10 +5,10 @@ const Styles = {
   Wrapper: styled.section`
     display: flex;
     height: 100%;
-    width: 100%;
+    flex-direction: column;
     padding: var(--spacing-xxlarge) var(--spacing-xsmall)
       var(--spacing-xxxlarge);
-    flex-direction: column;
+    width: 100%;
 
     ${greaterThan("tablet")`
       padding: var(--spacing-giant) var(--spacing-base) var(--spacing-xgiant);
@@ -16,7 +16,7 @@ const Styles = {
   `,
   Header: styled.div`
     margin-bottom: var(--spacing-large);
-    text-align: left;
+    text-align: center;
     width: 100%;
 
     ${greaterThan("tablet")`

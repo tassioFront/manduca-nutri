@@ -71,6 +71,12 @@ h1 {
   margin: var(--spacing-medium) 0 !important;  
 }
 
+h2 {
+  font-size: 32px !important;
+  font-weight: var(--font-weight-bold) !important;
+  margin: var(--spacing-base) 0 !important;  
+}
+
 p {
   font-size: 16px !important;
 }
@@ -85,12 +91,22 @@ button {
     font-size: 40px !important;
     margin: var(--spacing-large) 0 !important;  
   }
+
+  h2 {
+    font-size: 37px !important;
+    margin: var(--spacing-medium) 0 !important;  
+  }
 }
 
 @media (min-width:768px ) {
   h1 {
     font-size: 48px !important;
     margin: var(--spacing-xxlarge) 0 !important;  
+  }
+
+  h2 {
+    font-size: 45px !important;
+    margin: var(--spacing-xlarge) 0 !important;  
   }
 
   p {

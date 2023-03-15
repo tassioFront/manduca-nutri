@@ -11,12 +11,12 @@ export default function UIWhatsAppBtn({ label, ...rest }: IUIWhatsAppBtn) {
       sx={{
         minWidth: "auto",
         textTransform: "capitalize",
-        width: "100% !important",
       }}
       variant="contained"
       color="primary"
       disableElevation
       startIcon={<WhatsAppIcon />}
+      size="large"
       {...rest}
     >
       <span>{label ?? "Quero uma avaliação grátis"}</span>
