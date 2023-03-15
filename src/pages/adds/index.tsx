@@ -18,8 +18,8 @@ export default function HowItWorks() {
         {sections.map((section, index) => (
           <Styles.Section
             key={section.heading2}
-            data-color={isEven(index) ? "white" : bgContextColorDark}
-            data-bg={isEven(index) ? bgContextColor : "white"}
+            data-color={isEven(index) ? bgContextColorDark : "white"}
+            data-bg={isEven(index) ? "white" : bgContextColor}
             heading2={section.heading2}
           >
             <section.children />
