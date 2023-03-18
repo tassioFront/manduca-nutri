@@ -30,7 +30,7 @@ export default function Topics() {
     <Styles.Wrapper>
       {topics.map(({ Icon, label }) => (
         <Styles.Paper key={label} variant="adds">
-          <Icon sx={{ fontSize: "80px", marginBottom: "20px" }} />
+          <Icon sx={{ fontSize: "80px" }} />
           <p dangerouslySetInnerHTML={{ __html: label }}></p>
         </Styles.Paper>
       ))}
