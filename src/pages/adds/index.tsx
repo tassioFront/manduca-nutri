@@ -7,6 +7,7 @@ import {
   bgContextColorDark,
 } from "@/components/pages/adds/helpers/contextColors";
 import Styles from "./styles";
+import Footer from "@/components/pages/adds/Footer/Footer";
 
 export default function HowItWorks() {
   const isEven = (index: number) => index % 2;
@@ -25,6 +26,7 @@ export default function HowItWorks() {
             <section.children />
           </Styles.Section>
         ))}
+        <Footer />
       </Container>
     </>
   );
