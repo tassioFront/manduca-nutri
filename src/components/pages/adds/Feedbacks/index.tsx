@@ -1,6 +1,6 @@
 import { Styles } from "./styles";
 import { Typography, Avatar, Divider } from "@mui/material";
-import Image from "next/image";
+import WhatsAppBtn from "@/components/ui/Btns/WhatsApp";
 
 const feedbacks = [
   {
@@ -38,6 +38,7 @@ export default function Feedbacks() {
           </Styles.Stack>
         ))}
       </Styles.Content>
+      <WhatsAppBtn />
     </Styles.Wrapper>
   );
 }
