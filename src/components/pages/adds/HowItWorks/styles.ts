@@ -47,7 +47,6 @@ export const Styles = {
     }
 
     ${greaterThan("tablet")`
-      max-width: 500;
       padding: var(--spacing-large);
     `}
   `,

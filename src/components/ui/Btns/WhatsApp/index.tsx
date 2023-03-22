@@ -10,7 +10,7 @@ export default function UIWhatsAppBtn({ label, ...rest }: IUIWhatsAppBtn) {
     <Button
       sx={{
         minWidth: "auto",
-        textTransform: "capitalize",
+        textTransform: "none",
       }}
       variant="contained"
       color="primary"
