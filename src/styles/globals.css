@@ -77,6 +77,11 @@ h2 {
   margin: var(--spacing-base) 0 !important;  
 }
 
+h3 {
+  font-size: var(--spacing-large) !important;
+  margin-bottom: var(--spacing-xlarge) !important;
+}
+
 p {
   font-size: 16px !important;
 }
@@ -109,6 +114,10 @@ button {
     margin: var(--spacing-xlarge) 0 !important;  
   }
 
+  h3 {
+    margin-bottom: var(--spacing-xxxlarge) !important;
+  }
+
   p {
     font-size: 18px !important;
   }
@@ -116,4 +125,8 @@ button {
   button  {
     font-size: 24px !important;
   }
+}
+
+img {
+  object-fit: contain;
 }
