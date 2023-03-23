@@ -1,12 +1,12 @@
-import { colors } from "@/styles/theme";
 import Typography from "@mui/material/Typography";
+import { bgContextColorDark } from "../helpers/contextColors";
 import { Styles } from "./styles";
 
 const text = [
   {
     label: `
-    Não perca mais tempo com dietas
-    <span style="color: ${colors?.palette?.bgPink?.dark}">restritivas e desequilibradas!</span>`,
+    <span style="color: ${bgContextColorDark}">Não perca mais tempo</span> com dietas
+    restritivas e desequilibradas!`,
     variant: "h1",
     color: "white",
     textAlign: "center",
