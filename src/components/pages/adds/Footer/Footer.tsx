@@ -6,7 +6,9 @@ export default function Footer() {
     <Styles.Footer>
       <Logo />
       <div>
-        <p>Copyright © 2022</p>
+        <p>
+          Copyright © <span>{new Date().getFullYear()}</span>
+        </p>
         <p>Todos os direitos reservados.</p>
       </div>
     </Styles.Footer>

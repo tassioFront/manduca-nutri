@@ -35,6 +35,7 @@ export default function UIWhatsAppBtn({
       disableElevation
       startIcon={<WhatsAppIcon />}
       size={size}
+      title="Falar com Nutri Tamires Manduca via whatsapp"
       target="_blank"
       href="https://hotm.art/a24zaemg"
       {...rest}

@@ -12,6 +12,7 @@ export default function UInstagramBtn({ ...rest }) {
       color="secondary"
       disableElevation
       startIcon={<InstagramIcon />}
+      title="Acessar Instagram da Nutri Tamires Manduca"
       href="https://www.instagram.com/nutri.tamimanduca"
       target="_blank"
       size="large"

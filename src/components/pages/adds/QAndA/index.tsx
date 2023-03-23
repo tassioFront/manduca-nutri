@@ -37,6 +37,7 @@ export default function QAndA() {
             expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
             aria-controls={description}
             id={title}
+            title={`Exibir resposta da pergunta: ${title}`}
           >
             <Typography variant="h3" color="white" fontWeight="bold">
               {title}
