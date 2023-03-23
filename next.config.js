@@ -7,6 +7,15 @@ const nextConfig = {
     unoptimized: true,
   },
   pageExtensions: ["tsx"],
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/adds",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
