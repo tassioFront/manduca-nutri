@@ -11,18 +11,15 @@ const text = [
     color: "white",
     textAlign: "center",
   },
-  {
-    label: `
-    Se você está lutando com questões de saúde relacionadas a alimentação,
-    eu vou te ajudar a encontrar soluções eficazes.`,
-    variant: "body1",
-    color: "white",
-    textAlign: "center",
-    fontWeight: "900",
-  },
-  {
-    isWhats: true,
-  },
+  // {
+  //   label: `
+  //   Se você está lutando com questões de saúde relacionadas a alimentação,
+  //   eu vou te ajudar a encontrar soluções eficazes.`,
+  //   variant: "body1",
+  //   color: "white",
+  //   textAlign: "center",
+  //   fontWeight: "900",
+  // },
   {
     label: `Um ambiente seguro e confidencial, para discutir suas preocupações
     nutricionais e de saúde.`,
@@ -30,6 +27,9 @@ const text = [
     color: "white",
     textAlign: "center",
     fontWeight: "900",
+  },
+  {
+    isWhats: true,
   },
 ];
 

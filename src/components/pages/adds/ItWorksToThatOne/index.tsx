@@ -2,6 +2,8 @@ import { Styles } from "./styles";
 import { Typography } from "@mui/material";
 import Image from "next/image";
 import WhatsAppBtn from "@/components/ui/Btns/WhatsApp";
+import { Stack } from "@mui/system";
+import CheckIcon from "@mui/icons-material/Check";
 
 const itWorksToThatOne = [
   {
@@ -35,6 +37,19 @@ const itWorksToThatOne = [
   },
 ];
 
+const andAlsoWorksToThatOne = [
+  "Reeducação alimentar;",
+  "Associar alimentação ao exercício físico;",
+  "Controlar colesterol total elevado e triglicérides;",
+  "Reduzir gordura no fígado (Esteatose Hepática);",
+  "Dietoterapia específica para doenças crônicas como Diabetes 2, Hipertensão, Hipotireoidismo;",
+  "Tratar insônia;",
+  "Tratar alterações gástrointestinais: Gastrite, Doença do refluxo gastroesofágico, Hernia de hiato, doenças inflamatórias intestinais, síndrome do intestino irritável, colite, disbiose;",
+  "Tratar doenças ginecológicas mais comuns: Síndrome do Ovário policístico (SOP), Síndrome Pré Menstrual, Endometriose, Menopausa, Amenorreia;",
+  "Tratar infecção urinária de repetição;",
+  "Minimizar as sequelas pós Covid;",
+];
+
 export default function ItWorksToThatOne() {
   return (
     <Styles.Wrapper>
@@ -54,6 +69,31 @@ export default function ItWorksToThatOne() {
           </Styles.Paper>
         ))}
       </Styles.Content>
+      <Typography
+        variant="h2"
+        color="white"
+        fontWeight="bold"
+        textAlign="center"
+      >
+        E também para quem quer...
+      </Typography>
+      <Stack
+        py="40px"
+        color="white"
+        spacing={2}
+        direction="column"
+        alignItems="left"
+        textAlign="left"
+        maxWidth={800}
+      >
+        {andAlsoWorksToThatOne.map((text) => (
+          <Stack key={text} direction="row" spacing={2} fontWeight={900}>
+            <CheckIcon />
+            <p>{text}</p>
+          </Stack>
+        ))}
+      </Stack>
+
       <WhatsAppBtn />
     </Styles.Wrapper>
   );

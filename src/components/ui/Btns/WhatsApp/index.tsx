@@ -6,6 +6,19 @@ interface IUIWhatsAppBtn {
   size?: ButtonTypeMap["props"]["size"];
 }
 
+// function gtag_report_conversion(url) {
+//   var callback = function () {
+//     if (typeof(url) != 'undefined') {
+//       window.location = url;
+//     }
+//   };
+//   gtag('event', 'conversion', {
+//       'send_to': 'AW-11056675990/1ItCCIHm04YYEJb5nZgp',
+//       'event_callback': callback
+//   });
+//   return false;
+// }
+
 export default function UIWhatsAppBtn({
   label,
   size = "large",
@@ -26,7 +39,21 @@ export default function UIWhatsAppBtn({
       href="https://hotm.art/a24zaemg"
       {...rest}
     >
-      <span>{label ?? "Quero uma avaliação grátis"}</span>
+      <span>{label ?? "Quero uma avaliação grátis *"}</span>
+      {!label ? (
+        <span
+          style={{
+            position: "absolute",
+            top: "110%",
+            fontSize: "12px",
+            left: "0",
+          }}
+        >
+          * Consulta de 15min para nos conhecermos
+        </span>
+      ) : (
+        ""
+      )}
     </Button>
   );
 }

@@ -68,7 +68,8 @@ a {
 h1 {
   font-size: 35px !important;
   font-weight: var(--font-weight-bold) !important;
-  margin: var(--spacing-medium) 0 !important;  
+  margin: var(--spacing-xxxlarge) 0 !important;  
+
 }
 
 h2 {
@@ -83,7 +84,7 @@ h3 {
 }
 
 p {
-  font-size: 16px !important;
+  font-size: 18px !important;
 }
 
 button, a {
@@ -94,7 +95,6 @@ button, a {
 @media (min-width:360px ) {
   h1 {
     font-size: 40px !important;
-    margin: var(--spacing-large) 0 !important;  
   }
 
   h2 {
@@ -106,7 +106,7 @@ button, a {
 @media (min-width:768px ) {
   h1 {
     font-size: 48px !important;
-    margin: var(--spacing-xxlarge) 0 !important;  
+    margin: var(--spacing-giant) 0 !important;  
   }
 
   h2 {
@@ -119,7 +119,7 @@ button, a {
   }
 
   p {
-    font-size: 18px !important;
+    font-size: 20px !important;
   }
 
   button, a  {

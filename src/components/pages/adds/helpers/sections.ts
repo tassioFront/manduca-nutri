@@ -11,16 +11,16 @@ export const sections = [
     children: Topics,
   },
   {
-    heading2: "Planos",
-    children: Plans,
+    heading2: "Funciona pra quem quer...",
+    children: ItWorksToThatOne,
   },
   {
     heading2: "Como funciona",
     children: HowItWorks,
   },
   {
-    heading2: "Funciona pra quem quer...",
-    children: ItWorksToThatOne,
+    heading2: "Planos",
+    children: Plans,
   },
   {
     heading2: "Dúvidas frequentes",

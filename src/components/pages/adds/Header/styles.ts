@@ -49,6 +49,6 @@ export const Styles = {
     `}
   `,
   WhatsAppBtn: styled(WhatsAppBtn)`
-    margin: var(--spacing-base) 0;
+    margin: var(--spacing-base) 0 var(--spacing-xlarge);
   `,
 };

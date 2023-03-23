@@ -5,8 +5,7 @@ import Image from "next/image";
 const howItWorks = [
   {
     title: "Contato via whats",
-    description:
-      "Você entra em contato com meu time via whats para tirarmos suas dúvidas.",
+    description: "Você entra em contato via whats para tirarmos suas dúvidas.",
   },
   {
     title: "Agendamento",
