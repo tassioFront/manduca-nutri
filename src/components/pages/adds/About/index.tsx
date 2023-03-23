@@ -48,7 +48,11 @@ export default function About() {
           flexWrap="wrap"
         >
           <Styles.Instagram size="medium" />
-          <Styles.WhatsApp label="Whatsapp" size="medium" />
+          <Styles.WhatsApp
+            label="Whatsapp"
+            size="medium"
+            id="whats-btn--adds__about"
+          />
         </Stack>
       </Styles.Content>
     </Styles.Wrapper>

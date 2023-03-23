@@ -97,7 +97,7 @@ export default function Plans() {
           </Styles.Paper>
         ))}
       </Styles.Content>
-      <WhatsAppBtn />
+      <WhatsAppBtn id="whats-btn--adds__plans" />
     </Styles.Wrapper>
   );
 }

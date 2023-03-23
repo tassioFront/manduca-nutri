@@ -3,6 +3,7 @@ import { Button, ButtonTypeMap } from "@mui/material";
 
 interface IUIWhatsAppBtn {
   label?: string;
+  id: string;
   size?: ButtonTypeMap["props"]["size"];
 }
 
@@ -21,6 +22,7 @@ interface IUIWhatsAppBtn {
 
 export default function UIWhatsAppBtn({
   label,
+  id,
   size = "large",
   ...rest
 }: IUIWhatsAppBtn) {
@@ -35,6 +37,7 @@ export default function UIWhatsAppBtn({
       disableElevation
       startIcon={<WhatsAppIcon />}
       size={size}
+      id={id}
       title="Falar com Nutri Tamires Manduca via whatsapp"
       target="_blank"
       href="https://hotm.art/a24zaemg"
