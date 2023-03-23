@@ -11,11 +11,13 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { CacheProvider, EmotionCache } from "@emotion/react";
 import theme from "@/styles/theme";
 import createEmotionCache from "@/styles/createEmotionCache";
+import Script from "next/script";
 
 const clientSideEmotionCache = createEmotionCache();
 
 export default function App(props: AppProps & { emotionCache?: EmotionCache }) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+
   return (
     <CacheProvider value={emotionCache}>
       <Head>
@@ -27,6 +29,15 @@ export default function App(props: AppProps & { emotionCache?: EmotionCache }) {
         <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
+      <Script id="google-tag-manager" strategy="afterInteractive">
+        {`
+       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+       })(window,document,'script','dataLayer','GTM-MVGM68V')
+      `}
+      </Script>
     </CacheProvider>
   );
 }
