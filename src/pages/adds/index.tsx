@@ -9,7 +9,7 @@ import {
 import Styles from "./styles";
 import Footer from "@/components/pages/adds/Footer/Footer";
 
-export default function HowItWorks() {
+export default function Adds() {
   const isEven = (index: number) => index % 2;
   return (
     <>
@@ -18,7 +18,7 @@ export default function HowItWorks() {
         <Header />
         {sections.map((section, index) => (
           <Styles.Section
-            key={section.heading2}
+            key={index}
             data-color={isEven(index) ? "white" : bgContextColorDark}
             data-bg={isEven(index) ? bgContextColor : "white"}
             heading2={section.heading2}

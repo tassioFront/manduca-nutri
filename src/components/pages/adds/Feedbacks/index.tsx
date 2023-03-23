@@ -1,5 +1,5 @@
 import { Styles } from "./styles";
-import { Typography, Avatar, Divider } from "@mui/material";
+import { Typography, Avatar } from "@mui/material";
 import WhatsAppBtn from "@/components/ui/Btns/WhatsApp";
 
 const feedbacks = [

@@ -4,10 +4,10 @@ import HowItWorks from "../HowItWorks";
 import ItWorksToThatOne from "../ItWorksToThatOne";
 import QAndA from "../QAndA";
 import Feedbacks from "../Feedbacks";
+import About from "../About";
 
 export const sections = [
   {
-    heading2: "",
     children: Topics,
   },
   {
@@ -29,5 +29,8 @@ export const sections = [
   {
     heading2: "Alguns resultados para compartilhar com você",
     children: Feedbacks,
+  },
+  {
+    children: About,
   },
 ];

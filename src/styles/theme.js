@@ -7,7 +7,7 @@ const colors = {
       main: "#00A884",
     },
     secondary: {
-      main: "#19857b",
+      main: "#2196F3",
     },
     error: {
       main: red.A400,

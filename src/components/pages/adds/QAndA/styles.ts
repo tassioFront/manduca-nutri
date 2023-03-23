@@ -14,6 +14,7 @@ export const Styles = {
   Accordion: styled(Accordion)`
     background-color: ${bgContextColor};
     color: white;
+    width: 100%;
 
     h3 {
       margin: 0 !important;
