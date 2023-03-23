@@ -8,7 +8,7 @@ export default function About() {
       <Styles.Image
         src="./manduca__perfil.png"
         height="300"
-        width="400"
+        width="300"
         alt="Imagem da Nutri Tamires Manduca"
       ></Styles.Image>
       <Styles.Content>
@@ -39,9 +39,16 @@ export default function About() {
           situação.
         </p>
         <p>CRN3: 51021</p>
-        <Stack direction="row" spacing={2} justifyContent="flex-end">
-          <Styles.Instagram />
-          <Styles.WhatsApp label="Whatsapp" />
+        <Stack
+          direction="row"
+          sx={{
+            gap: "10px",
+          }}
+          justifyContent="flex-end"
+          flexWrap="wrap"
+        >
+          <Styles.Instagram size="medium" />
+          <Styles.WhatsApp label="Whatsapp" size="medium" />
         </Stack>
       </Styles.Content>
     </Styles.Wrapper>
