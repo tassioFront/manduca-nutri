@@ -92,6 +92,11 @@ button, a {
   font-weight: var(--font-weight-bold) !important;
 }
 
+/* it helps gtm events detect clicks in children elements */
+a[data-gt] > *, button[data-gt] > * {
+  pointer-events: none;
+}
+
 @media (min-width:360px ) {
   h1 {
     font-size: 40px !important;
