@@ -46,4 +46,20 @@ export const Styles = {
       padding: var(--spacing-large);
     `}
   `,
+  InstaFeedBacks: styled.div`
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-base);
+    padding: var(--spacing-base);
+    margin-top: var(--spacing-base);
+
+    ${greaterThan("tablet")`
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: var(--spacing-giant);
+  `}
+  `,
 };
