@@ -51,6 +51,7 @@ export default function About() {
           <Styles.WhatsApp
             label="Whatsapp"
             size="medium"
+            data-gt="whats-btn--adds"
             id="whats-btn--adds__about"
           />
         </Stack>

@@ -38,7 +38,7 @@ export default function Feedbacks() {
           </Styles.Stack>
         ))}
       </Styles.Content>
-      <WhatsAppBtn id="whats-btn--adds__feedbacks" />
+      <WhatsAppBtn data-gt="whats-btn--adds" id="whats-btn--adds__feedbacks" />
     </Styles.Wrapper>
   );
 }

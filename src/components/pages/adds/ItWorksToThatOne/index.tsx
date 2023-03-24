@@ -94,7 +94,7 @@ export default function ItWorksToThatOne() {
         ))}
       </Stack>
 
-      <WhatsAppBtn id="whats-btn--adds__it-works" />
+      <WhatsAppBtn data-gt="whats-btn--adds" id="whats-btn--adds__it-works" />
     </Styles.Wrapper>
   );
 }

@@ -41,7 +41,10 @@ export default function Header() {
         {text.map((tex) => (
           <div key={tex.label || "btn"}>
             {tex.isWhats ? (
-              <Styles.WhatsAppBtn id="whats-btn--adds__header" />
+              <Styles.WhatsAppBtn
+                data-gt="whats-btn--adds"
+                id="whats-btn--adds__header"
+              />
             ) : (
               <Typography
                 variant={tex?.variant as "h1"}
