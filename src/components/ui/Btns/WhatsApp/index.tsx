@@ -43,21 +43,7 @@ export default function UIWhatsAppBtn({
       href="https://hotm.art/a24zaemg"
       {...rest}
     >
-      <span>{label ?? "Quero uma avaliação grátis *"}</span>
-      {!label ? (
-        <span
-          style={{
-            position: "absolute",
-            top: "110%",
-            fontSize: "12px",
-            left: "0",
-          }}
-        >
-          * Consulta de 15min para nos conhecermos
-        </span>
-      ) : (
-        ""
-      )}
+      <span>{label ?? "Quero uma avaliação grátis"}</span>
     </Button>
   );
 }
