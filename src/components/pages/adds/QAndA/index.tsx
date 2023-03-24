@@ -26,6 +26,11 @@ const qa = [
     description:
       "Após o pagamento da consulta, nós geramos um recibo que você pode usar pra solicitar reembolso. Consulte seu convênio para mais informações.",
   },
+  {
+    title: "Como funciona a Avaliação grátis?",
+    description:
+      "É uma conversa de 15min, sem compromisso, para nos conhecermos melhor. É um oportunidade para que você tire as dúvidas que tem sobre o meu trabalho e entendermos como eu posso te ajudar.",
+  },
 ];
 
 export default function QAndA() {
