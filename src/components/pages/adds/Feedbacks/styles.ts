@@ -1,13 +1,12 @@
 import { greaterThan } from "@/styles/media";
 import styled from "@emotion/styled";
 import { Stack } from "@mui/material";
-import { bgContextColor } from "../helpers/contextColors";
 
 export const Styles = {
   Wrapper: styled.div`
     align-items: center;
     display: flex;
-    color: white;
+    /* color: white; */
     flex-direction: column;
     text-align: center;
     width: 100%;
@@ -30,7 +29,6 @@ export const Styles = {
   `,
   Stack: styled(Stack)`
     align-items: center;
-    background-color: ${bgContextColor};
     display: flex;
     flex-direction: column;
     padding: var(--spacing-medium);

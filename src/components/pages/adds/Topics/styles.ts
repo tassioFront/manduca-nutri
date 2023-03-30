@@ -18,7 +18,7 @@ export const Styles = {
   `,
   Paper: styled(Paper)`
     align-items: center;
-    color: white;
+    /* color: white; */
     display: flex;
     max-width: 400px;
     margin: var(--spacing-base);

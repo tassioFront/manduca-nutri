@@ -27,7 +27,11 @@ const instaFeedbacks = [
   "./insta-feed-3.jpeg",
 ];
 
-export default function Feedbacks() {
+interface IFeedbacks {
+  contextColorContrast: string;
+}
+
+export default function Feedbacks({ contextColorContrast }: IFeedbacks) {
   return (
     <Styles.Wrapper>
       <Styles.Content>
@@ -38,10 +42,17 @@ export default function Feedbacks() {
               src={src}
               sx={{ width: 85, height: 85, marginBottom: "15px" }}
             />
-            <Typography variant="h3" color="white" fontWeight="bold">
+            <Typography
+              variant="h3"
+              color={contextColorContrast}
+              fontWeight="bold"
+            >
               {name}
             </Typography>
-            <p dangerouslySetInnerHTML={{ __html: description }}></p>
+            <Typography
+              dangerouslySetInnerHTML={{ __html: description }}
+              color={contextColorContrast}
+            />
           </Styles.Stack>
         ))}
       </Styles.Content>

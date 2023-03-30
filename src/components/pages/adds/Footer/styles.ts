@@ -1,12 +1,11 @@
 import { greaterThan } from "@/styles/media";
 import styled from "@emotion/styled";
 import WhatsAppBtn from "@/components/ui/Btns/WhatsApp";
-import { bgContextColor } from "../helpers/contextColors";
 
 export const Styles = {
   Footer: styled.footer`
     align-items: center;
-    background-color: ${bgContextColor};
+    background-color: black;
     color: white;
     display: flex;
     flex-direction: column;

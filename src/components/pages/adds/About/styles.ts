@@ -8,7 +8,6 @@ export const Styles = {
   Wrapper: styled.div`
     align-items: center;
     display: flex;
-    color: black;
     flex-direction: column;
     text-align: center;
     width: 100%;

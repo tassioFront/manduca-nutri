@@ -50,19 +50,27 @@ const andAlsoWorksToThatOne = [
   "Minimizar as sequelas pós Covid;",
 ];
 
-export default function ItWorksToThatOne() {
+interface IItWorksToThatOne {
+  contextColor: string;
+  contextColorContrast: string;
+}
+
+export default function ItWorksToThatOne({
+  contextColor,
+  contextColorContrast,
+}: IItWorksToThatOne) {
   return (
     <Styles.Wrapper>
       <Styles.Content>
         {itWorksToThatOne.map(({ description, src, title }) => (
-          <Styles.Paper key={title}>
+          <Styles.Paper key={title} bgColor={contextColorContrast}>
             <Image
               src={"./" + src}
               height="160"
               width="160"
               alt="ícone com passo"
             />
-            <Typography variant="h3" color="white" fontWeight="bold">
+            <Typography variant="h3" color={contextColor} fontWeight="bold">
               {title}
             </Typography>
             <p dangerouslySetInnerHTML={{ __html: description }}></p>
@@ -71,7 +79,7 @@ export default function ItWorksToThatOne() {
       </Styles.Content>
       <Typography
         variant="h2"
-        color="white"
+        color={contextColorContrast}
         fontWeight="bold"
         textAlign="center"
       >
@@ -79,7 +87,7 @@ export default function ItWorksToThatOne() {
       </Typography>
       <Stack
         py="40px"
-        color="white"
+        color={"white"}
         spacing={2}
         direction="column"
         alignItems="left"

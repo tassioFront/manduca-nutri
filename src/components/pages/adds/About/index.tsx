@@ -2,7 +2,12 @@ import { Styles } from "./styles";
 import { Typography } from "@mui/material";
 import { Stack } from "@mui/system";
 
-export default function About() {
+interface IAbout {
+  contextColorContrast: string;
+  contextColor: string;
+}
+
+export default function About({ contextColor, contextColorContrast }: IAbout) {
   return (
     <Styles.Wrapper>
       <Styles.Image
@@ -11,7 +16,7 @@ export default function About() {
         width="300"
         alt="Imagem da Nutri Tamires Manduca"
       ></Styles.Image>
-      <Styles.Content>
+      <Styles.Content style={{ color: contextColorContrast }}>
         <Typography variant="h2">Olá! Eu sou Tamires Manduca</Typography>
         <p>
           Na infância eu tinha muita dificuldade para me alimentar

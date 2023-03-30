@@ -19,22 +19,37 @@ const howItWorks = [
   },
 ];
 
-export default function HowItWorks() {
+interface IHowItWorks {
+  contextColor: string;
+  contextColorContrast: string;
+}
+
+export default function HowItWorks({
+  contextColor,
+  contextColorContrast,
+}: IHowItWorks) {
   return (
     <Styles.Wrapper>
       <Styles.Content>
         {howItWorks.map(({ description, title }, index) => (
-          <Styles.Paper key={title}>
+          <Styles.Paper key={title} bgColor={contextColor}>
             <Image
               src={`./icone-${index + 1}.png`}
               height="160"
               width="160"
               alt="ícone com passo"
             />
-            <Typography variant="h3" color="white" fontWeight="bold">
+            <Typography
+              variant="h3"
+              color={contextColorContrast}
+              fontWeight="bold"
+            >
               {title}
             </Typography>
-            <p dangerouslySetInnerHTML={{ __html: description }}></p>
+            <Typography
+              color={contextColorContrast}
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
           </Styles.Paper>
         ))}
       </Styles.Content>

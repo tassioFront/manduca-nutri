@@ -6,17 +6,16 @@ import Styles from "./styles";
 import Footer from "@/components/pages/adds/Footer/Footer";
 import { colors } from "@/styles/theme";
 
-export default function Adds() {
+export default function AddsBlack() {
   const isEven = (index: number) => index % 2;
-  const sections = defineContext();
-
+  const sections = defineContext("premiumContext");
   return (
     <>
       <PageHead />
       <Container component="main" maxWidth="xl" disableGutters>
         <Header
-          contextColor={colors.palette.pinkContext.main}
-          contextColorContrast={colors.palette.pinkContext.dark}
+          contextColor={colors.palette.premiumContext.main}
+          contextColorContrast={colors.palette.premiumContext.mainContrast}
         />
         {sections.map((section, index) => (
           <Styles.Section
@@ -26,8 +25,8 @@ export default function Adds() {
             heading2={section.heading2}
           >
             <section.children
-              contextColor={section.contextColor}
               contextColorContrast={section.contextColorContrast}
+              contextColor={section.contextColor}
             />
           </Styles.Section>
         ))}

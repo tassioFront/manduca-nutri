@@ -1,7 +1,6 @@
 import { greaterThan } from "@/styles/media";
 import styled from "@emotion/styled";
 import Accordion from "@mui/material/Accordion";
-import { bgContextColor } from "../helpers/contextColors";
 
 export const Styles = {
   Wrapper: styled.div`
@@ -12,8 +11,6 @@ export const Styles = {
     width: 100%;
   `,
   Accordion: styled(Accordion)`
-    background-color: ${bgContextColor};
-    color: white;
     width: 100%;
 
     h3 {

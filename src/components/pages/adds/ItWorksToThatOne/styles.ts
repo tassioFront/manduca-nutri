@@ -1,13 +1,11 @@
 import { greaterThan } from "@/styles/media";
 import styled from "@emotion/styled";
 import Paper from "@/components/ui/Paper";
-import { bgContextColor } from "../helpers/contextColors";
 
 export const Styles = {
   Wrapper: styled.div`
     align-items: center;
     display: flex;
-    /* color: ${bgContextColor}; */
     flex-direction: column;
     text-align: left;
     width: 100%;
@@ -38,7 +36,6 @@ export const Styles = {
 
     h3 {
       align-self: flex-start;
-      background-color: ${bgContextColor};
       font-size: var(--spacing-large);
       margin-bottom: var(--spacing-xlarge);
 

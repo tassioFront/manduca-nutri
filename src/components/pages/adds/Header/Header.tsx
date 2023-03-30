@@ -2,43 +2,53 @@ import Typography from "@mui/material/Typography";
 import { bgContextColorDark } from "../helpers/contextColors";
 import { Styles } from "./styles";
 
-const text = [
-  {
-    label: `
-    <span style="color: ${bgContextColorDark}">Não perca mais tempo</span> com dietas
+const text = (context: string) => {
+  return [
+    {
+      label: `
+    <span style="color: ${context}">Não perca mais tempo</span> com dietas
     restritivas e desequilibradas!`,
-    variant: "h1",
-    color: "white",
-    textAlign: "center",
-  },
-  // {
-  //   label: `
-  //   Se você está lutando com questões de saúde relacionadas a alimentação,
-  //   eu vou te ajudar a encontrar soluções eficazes.`,
-  //   variant: "body1",
-  //   color: "white",
-  //   textAlign: "center",
-  //   fontWeight: "900",
-  // },
-  {
-    label: `Um ambiente seguro e confidencial, para discutir suas preocupações
+      variant: "h1",
+      color: "white",
+      textAlign: "center",
+    },
+    // {
+    //   label: `
+    //   Se você está lutando com questões de saúde relacionadas a alimentação,
+    //   eu vou te ajudar a encontrar soluções eficazes.`,
+    //   variant: "body1",
+    //   color: "white",
+    //   textAlign: "center",
+    //   fontWeight: "900",
+    // },
+    {
+      label: `Um ambiente seguro e confidencial, para discutir suas preocupações
     nutricionais e de saúde.`,
-    variant: "body1",
-    color: "white",
-    textAlign: "center",
-    fontWeight: "900",
-  },
-  {
-    isWhats: true,
-  },
-];
+      variant: "body1",
+      color: "white",
+      textAlign: "center",
+      fontWeight: "900",
+    },
+    {
+      isWhats: true,
+    },
+  ];
+};
 
-export default function Header() {
+interface IHeader {
+  contextColor: string;
+  contextColorContrast: string;
+}
+
+export default function Header({
+  contextColor,
+  contextColorContrast,
+}: IHeader) {
   return (
-    <Styles.Header>
+    <Styles.Header style={{ backgroundColor: contextColor }}>
       <Styles.Logo />
       <Styles.Intro>
-        {text.map((tex) => (
+        {text(contextColorContrast).map((tex) => (
           <div key={tex.label || "btn"}>
             {tex.isWhats ? (
               <Styles.WhatsAppBtn

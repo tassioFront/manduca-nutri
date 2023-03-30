@@ -14,11 +14,22 @@ const colors = {
     },
     bgPink: {
       main: "#DD978D",
+      mainContrast: "white",
       light: "#FFEEEB",
+      dark: "#70241a",
+    },
+    premiumContext: {
+      main: "#000",
+      mainContrast: "#D1B27B",
+    },
+    pinkContext: {
+      main: "#DD978D",
+      mainContrast: "white",
       dark: "#70241a",
     },
   },
 };
+
 const theme = createTheme({ ...colors });
 export { colors };
 export default theme;

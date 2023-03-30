@@ -4,17 +4,16 @@ import Styles from "./styles";
 interface PaperTypes {
   children: JSX.Element | JSX.Element[] | string;
   variant?: "default" | "adds";
+  bgColor: string;
 }
 export default function Paper({
   children,
   variant = "default",
+  bgColor,
   ...rest
 }: PaperTypes) {
   return (
-    <Styles.Wrapper
-      color={variant === "default" ? "white" : colors.palette.bgPink.main}
-      {...rest}
-    >
+    <Styles.Wrapper color={bgColor} {...rest}>
       {children}
     </Styles.Wrapper>
   );

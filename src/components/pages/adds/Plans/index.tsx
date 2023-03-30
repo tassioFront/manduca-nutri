@@ -73,13 +73,18 @@ const plans = [
   },
 ];
 
-export default function Plans() {
+interface IPlans {
+  contextColor: string;
+  contextColorContrast: string;
+}
+
+export default function Plans({ contextColor, contextColorContrast }: IPlans) {
   return (
     <Styles.Wrapper>
       <Styles.Content>
         {plans.map(({ items, title }) => (
-          <Styles.Paper key={title}>
-            <Typography variant="h3" color="white" fontWeight="bold">
+          <Styles.Paper bgColor={contextColorContrast} key={title}>
+            <Typography variant="h3" color={contextColor} fontWeight="bold">
               {title}
             </Typography>
             <>

@@ -33,23 +33,35 @@ const qa = [
   },
 ];
 
-export default function QAndA() {
+interface IQandA {
+  contextColor: string;
+  contextColorContrast: string;
+}
+
+export default function QAndA({ contextColor, contextColorContrast }: IQandA) {
   return (
     <Styles.Wrapper>
       {qa.map(({ title, description }) => (
-        <Styles.Accordion color="white" key={description}>
+        <Styles.Accordion
+          sx={{ backgroundColor: contextColorContrast }}
+          color={contextColor}
+          key={description}
+        >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
+            expandIcon={<ExpandMoreIcon sx={{ color: contextColor }} />}
             aria-controls={description}
             id={title}
             title={`Exibir resposta da pergunta: ${title}`}
           >
-            <Typography variant="h3" color="white" fontWeight="bold">
+            <Typography variant="h3" color={contextColor} fontWeight="bold">
               {title}
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <p dangerouslySetInnerHTML={{ __html: description }}></p>
+            <Typography
+              dangerouslySetInnerHTML={{ __html: description }}
+              color={contextColor}
+            />
           </AccordionDetails>
         </Styles.Accordion>
       ))}

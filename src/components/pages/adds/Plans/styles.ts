@@ -1,7 +1,6 @@
 import { greaterThan } from "@/styles/media";
 import styled from "@emotion/styled";
 import Paper from "@/components/ui/Paper";
-import { bgContextColor } from "../helpers/contextColors";
 
 export const Styles = {
   Wrapper: styled.div`
@@ -35,7 +34,6 @@ export const Styles = {
     width: 100%;
 
     h3 {
-      background-color: ${bgContextColor};
       font-size: var(--spacing-large);
       margin-bottom: var(--spacing-xlarge);
 

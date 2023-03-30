@@ -1,4 +1,3 @@
-import { bgPinkLinearGradient } from "@/styles/customBackground";
 import { greaterThan } from "@/styles/media";
 import styled from "@emotion/styled";
 import Image from "next/image";
@@ -13,7 +12,6 @@ export const Styles = {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: ${bgPinkLinearGradient()};
     padding-bottom: 0px;
 
     & p {
@@ -28,6 +26,10 @@ export const Styles = {
   `,
   Intro: styled.div`
     max-width: 600px;
+
+    & span {
+      color: ${(props) => props.color} !important;
+    }
   `,
   Logo: styled(Logo)`
     align-self: flex-start;
